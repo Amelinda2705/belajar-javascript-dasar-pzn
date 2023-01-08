@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator logika di non boolean</title>
+</head>
+<body>
+    <script>
+
+        // || (or) yang diambil truthy sedangkan && (and) yang diambil falsy
+
+        console.info("hello" || "");
+        console.info("" || []);
+        console.info("0" || "null");
+        console.info(0 || "null");
+        console.info(null || "null");
+        console.info(undefined || "undefined");
+        console.info(0 || false);
+        
+        const person = {
+            firstName: "",
+            lastName: "World"
+        };
+
+        const name = person.firstName || person.lastName;
+        console.info(name);
+        
+        console.info("hello" && "");
+        console.info("" && []);
+        console.info("0" && "null");
+        console.info(0 && "null");
+        console.info(null && "null");
+        console.info(undefined && "undefined");
+        console.info("undefined" && "null");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe data undefined</title>
+</head>
+<body>
+    <script>
+
+        let name;
+
+        if (name === undefined) {
+            console.info("undefined");
+        } else {
+            console.info("defined");
+        }
+
+        name = 7;
+
+        if (name === undefined) {
+            console.info("undefined");
+        } else {
+            console.info("defined");
+        }
+
+        const names = ["amel", "Amel"];
+        delete names[0]; // names[0] = undefined;
+
+        if (names[0] === undefined) {
+            console.info("undefined");
+        } else {
+            console.info("defined");
+        }
+
+        const person = {};
+
+        if (person.name === undefined) {
+            console.info("undefined");
+        } else {
+            console.info("defined");
+        }
+
+    </script>
+</body>
+</html>

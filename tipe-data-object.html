@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe data object</title>
+</head>
+<body>
+    <script>
+
+        // mirip array, bedanya object nama indexnya bisa diubah dan kalo array pake [] kalo object pake {}
+
+        const orang = {
+            "nama lengkap" : "Amelinda",
+            alamat: "Indonesia",
+            umur: 15
+        };
+
+        // menambah atau mengubah property / attribute
+        // orang["nama"] = "Amelinda";
+        // orang["alamat"] = "Indonesia";
+        // orang["umur"] = 15;
+
+        console.info(`Nama : ${orang["nama lengkap"]}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`Umur : ${orang.umur}`);
+
+        console.table(orang);
+
+        // menghapus
+        delete orang["umur"];
+
+        console.table(orang);
+
+    </script>
+</body>
+</html>
